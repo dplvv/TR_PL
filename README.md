@@ -46,9 +46,8 @@ Travel App — это простое мобильное приложение, д
 Проект состоит из трёх модулей:
 
 	1.	composeApp: модуль, содержащий общую UI/логику для приложений Android и iOS.
- 
-	•	Основной @Composable-функцией приложения является App, находящаяся в composeApp/src/commonMain/kotlin/App.kt.
-	•	В этом модуле используются Gradle и Jetpack Compose Multiplatform.
+		•	Основной @Composable-функцией приложения является App, находящаяся в composeApp/src/commonMain/kotlin/App.kt.
+		•	В этом модуле используются Gradle и Jetpack Compose Multiplatform.
  
 	2.	iosApp: xcode-проект, который собирает iOS-приложение и использует общий модуль как зависимость через CocoaPods.
 
