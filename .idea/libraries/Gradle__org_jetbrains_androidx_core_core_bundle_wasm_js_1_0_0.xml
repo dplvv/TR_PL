@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: org.jetbrains.androidx.core:core-bundle-wasm-js:1.0.0" type="kotlin.wasm.js" external-system-id="GRADLE">
+    <properties groupId="org.jetbrains.androidx.core" artifactId="core-bundle-wasm-js" version="1.0.0" />
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.androidx.core/core-bundle-wasm-js/1.0.0/b0e9a0e133cad18893037e537b7f92b05dc976e6/core-bundle-wasm-js-1.0.0.klib!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.androidx.core/core-bundle-wasm-js/1.0.0/1e3c6141c003d25647da7c99ceb403ef421e394a/core-bundle-wasm-js-1.0.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

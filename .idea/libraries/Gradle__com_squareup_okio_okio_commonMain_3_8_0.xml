@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.squareup.okio:okio:commonMain:3.8.0" type="kotlin.common" external-system-id="GRADLE">
+    <properties groupId="com.squareup.okio" artifactId="okio" version="3.8.0" />
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/.kotlin/metadata/kotlinTransformedMetadataLibraries/com.squareup.okio-okio-3.8.0-commonMain-YgoO1Q.klib!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/3.8.0/384940feac2426cb868633537ec304d6393edc7b/okio-3.8.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

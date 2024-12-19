@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: io.ktor:ktor-client-core-jvm:3.0.0-wasm2" type="java-imported" external-system-id="GRADLE">
+    <properties groupId="io.ktor" artifactId="ktor-client-core-jvm" version="3.0.0-wasm2" />
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.ktor/ktor-client-core-jvm/3.0.0-wasm2/f9def7de6ae1b0f6ca4dfb5b56a14eec27f194b5/ktor-client-core-jvm-3.0.0-wasm2.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.ktor/ktor-client-core-jvm/3.0.0-wasm2/489d9250cf6ee75bcc8a222b97e518c6db0be8f2/ktor-client-core-jvm-3.0.0-wasm2-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.ktor/ktor-client-core-jvm/3.0.0-wasm2/c197317ec3dcf2a7cb43a3ec07605b0c132098e7/ktor-client-core-jvm-3.0.0-wasm2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

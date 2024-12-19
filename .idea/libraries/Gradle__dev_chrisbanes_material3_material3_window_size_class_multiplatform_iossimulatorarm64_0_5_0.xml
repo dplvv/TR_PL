@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: dev.chrisbanes.material3:material3-window-size-class-multiplatform-iossimulatorarm64:0.5.0" type="kotlin.native" external-system-id="GRADLE">
+    <properties groupId="dev.chrisbanes.material3" artifactId="material3-window-size-class-multiplatform-iossimulatorarm64" version="0.5.0" />
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/dev.chrisbanes.material3/material3-window-size-class-multiplatform-iossimulatorarm64/0.5.0/495e0613aebd382a5c5a06c8fa7a4e7a2c68c725/lib.klib!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/dev.chrisbanes.material3/material3-window-size-class-multiplatform-iossimulatorarm64/0.5.0/dc983f60168b5c40c09af62da5827b12a57fe991/lib-cinterop-objc.klib!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/dev.chrisbanes.material3/material3-window-size-class-multiplatform-iossimulatorarm64/0.5.0/37019cd8ce9848ba9a61e373e4dda16cb9145c22/lib-iossimulatorarm64-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
