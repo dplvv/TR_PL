@@ -55,9 +55,6 @@ jobs:
           java-version: '17'
           distribution: 'zulu'
 
-      - name: Install CocoaPods
-        run: pod install --project-directory=iosApp
-
       - name: Build iOS
         run: |
           xcodebuild -allowProvisioningUpdates \
