@@ -49,28 +49,40 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
+      - name: Check Xcode version
+        run: xcodebuild -version
+
       - name: Set up JDK
         uses: actions/setup-java@v4
         with:
           java-version: '17'
           distribution: 'zulu'
 
-      - name: Install CocoaPods
+      - name: Install CocoaPods (if needed)
         run: |
           if [ -f iosApp/Podfile ]; then
+            echo "Installing CocoaPods dependencies..."
             pod install --project-directory=iosApp
           else
-            echo "No Podfile found. Skipping pod install."
+            echo "No Podfile found. Skipping CocoaPods installation."
           fi
 
-      - name: List contents of iosApp directory
+      - name: Verify iOS project format compatibility
         run: |
-          echo "Contents of iosApp directory:"
-          ls -R iosApp
+          if [ ! -d iosApp/iosApp.xcodeproj ]; then
+            echo "Error: Project file 'iosApp.xcodeproj' not found."
+            exit 1
+          fi
+          echo "Checking if project is compatible with current Xcode..."
+          xcodebuild -project iosApp/iosApp.xcodeproj -list || {
+            echo "The project file format is incompatible with the current Xcode version."
+            exit 1
+          }
 
-      - name: Build iOS
+      - name: Build iOS app
         run: |
           if [ -d iosApp/iosApp.xcworkspace ]; then
+            echo "Building with .xcworkspace..."
             xcodebuild -allowProvisioningUpdates \
               -workspace iosApp/iosApp.xcworkspace \
               -scheme iosApp \
@@ -81,6 +93,7 @@ jobs:
               CODE_SIGN_IDENTITY="" \
               DEVELOPMENT_TEAM=""
           else
+            echo "Building with .xcodeproj..."
             xcodebuild -allowProvisioningUpdates \
               -project iosApp/iosApp.xcodeproj \
               -scheme iosApp \
@@ -92,11 +105,12 @@ jobs:
               DEVELOPMENT_TEAM=""
           fi
 
-      - name: Upload iOS artifacts
+      - name: Upload iOS build artifacts
         uses: actions/upload-artifact@v4
         with:
-          name: ios-app
-          path: iosApp/build/Release-iphoneos/*.app
+          name: ios-build-artifacts
+          path: |
+            iosApp/build/Release-iphoneos/*.app
 
   # Desktop build job
   build-desktop:
