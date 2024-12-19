@@ -1,0 +1,74 @@
+[
+    {
+        "merged": "com.travel.buddy.composeApp-merged_res-49:/drawable_menu_notification.xml.flat",
+        "source": "com.travel.buddy.composeApp-main-52:/drawable/menu_notification.xml"
+    },
+    {
+        "merged": "com.travel.buddy.composeApp-merged_res-49:/mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "com.travel.buddy.composeApp-androidMain-50:/mipmap-xhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "com.travel.buddy.composeApp-merged_res-49:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "com.travel.buddy.composeApp-androidMain-50:/mipmap-anydpi-v26/ic_launcher_round.xml"
+    },
+    {
+        "merged": "com.travel.buddy.composeApp-merged_res-49:/drawable_menu_fav.xml.flat",
+        "source": "com.travel.buddy.composeApp-main-52:/drawable/menu_fav.xml"
+    },
+    {
+        "merged": "com.travel.buddy.composeApp-merged_res-49:/drawable_menu_home.xml.flat",
+        "source": "com.travel.buddy.composeApp-main-52:/drawable/menu_home.xml"
+    },
+    {
+        "merged": "com.travel.buddy.composeApp-merged_res-49:/mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "com.travel.buddy.composeApp-androidMain-50:/mipmap-hdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "com.travel.buddy.composeApp-merged_res-49:/drawable_ic_launcher_background.xml.flat",
+        "source": "com.travel.buddy.composeApp-androidMain-50:/drawable/ic_launcher_background.xml"
+    },
+    {
+        "merged": "com.travel.buddy.composeApp-merged_res-49:/mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "com.travel.buddy.composeApp-androidMain-50:/mipmap-mdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "com.travel.buddy.composeApp-merged_res-49:/mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "com.travel.buddy.composeApp-androidMain-50:/mipmap-xxhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "com.travel.buddy.composeApp-merged_res-49:/mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "com.travel.buddy.composeApp-androidMain-50:/mipmap-xxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.travel.buddy.composeApp-merged_res-49:/drawable-v24_ic_launcher_foreground.xml.flat",
+        "source": "com.travel.buddy.composeApp-androidMain-50:/drawable-v24/ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "com.travel.buddy.composeApp-merged_res-49:/mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "com.travel.buddy.composeApp-androidMain-50:/mipmap-xhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.travel.buddy.composeApp-merged_res-49:/mipmap-hdpi_ic_launcher.png.flat",
+        "source": "com.travel.buddy.composeApp-androidMain-50:/mipmap-hdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.travel.buddy.composeApp-merged_res-49:/mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "com.travel.buddy.composeApp-androidMain-50:/mipmap-xxxhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "com.travel.buddy.composeApp-merged_res-49:/mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "com.travel.buddy.composeApp-androidMain-50:/mipmap-xxxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.travel.buddy.composeApp-merged_res-49:/mipmap-mdpi_ic_launcher.png.flat",
+        "source": "com.travel.buddy.composeApp-androidMain-50:/mipmap-mdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.travel.buddy.composeApp-merged_res-49:/drawable_menu_profile.xml.flat",
+        "source": "com.travel.buddy.composeApp-main-52:/drawable/menu_profile.xml"
+    },
+    {
+        "merged": "com.travel.buddy.composeApp-merged_res-49:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "com.travel.buddy.composeApp-androidMain-50:/mipmap-anydpi-v26/ic_launcher.xml"
+    }
+]
