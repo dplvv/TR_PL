@@ -9,7 +9,7 @@ on:
       - main
 
 jobs:
-  # Workflow block for building Android
+  # Android build job
   build-android:
     runs-on: ubuntu-latest
     steps:
@@ -42,14 +42,12 @@ jobs:
           name: android-release-apk
           path: composeApp/build/outputs/apk/release/*.apk
 
-  # Workflow block for building iOS
+  # iOS build job
   build-ios:
     runs-on: macos-latest
     steps:
-      - name: Set up latest Xcode
-        uses: maxim-lobanov/setup-xcode@v1
-        with:
-          xcode-version: 16.0
+      - name: Checkout code
+        uses: actions/checkout@v4
 
       - name: Set up JDK
         uses: actions/setup-java@v4
@@ -57,17 +55,42 @@ jobs:
           java-version: '17'
           distribution: 'zulu'
 
+      - name: Install CocoaPods
+        run: |
+          if [ -f iosApp/Podfile ]; then
+            pod install --project-directory=iosApp
+          else
+            echo "No Podfile found. Skipping pod install."
+          fi
+
+      - name: List contents of iosApp directory
+        run: |
+          echo "Contents of iosApp directory:"
+          ls -R iosApp
+
       - name: Build iOS
         run: |
-          xcodebuild -allowProvisioningUpdates \
-            -workspace iosApp/iosApp.xcodeproj/project.xcworkspace \
-            -scheme iosApp \
-            -configuration Release \
-            -sdk iphoneos \
-            -destination 'generic/platform=iOS' \
-            build CODE_SIGNING_REQUIRED=NO \
-            CODE_SIGN_IDENTITY="" \
-            DEVELOPMENT_TEAM=""
+          if [ -d iosApp/iosApp.xcworkspace ]; then
+            xcodebuild -allowProvisioningUpdates \
+              -workspace iosApp/iosApp.xcworkspace \
+              -scheme iosApp \
+              -configuration Release \
+              -sdk iphoneos \
+              -destination 'generic/platform=iOS' \
+              build CODE_SIGNING_REQUIRED=NO \
+              CODE_SIGN_IDENTITY="" \
+              DEVELOPMENT_TEAM=""
+          else
+            xcodebuild -allowProvisioningUpdates \
+              -project iosApp/iosApp.xcodeproj \
+              -scheme iosApp \
+              -configuration Release \
+              -sdk iphoneos \
+              -destination 'generic/platform=iOS' \
+              build CODE_SIGNING_REQUIRED=NO \
+              CODE_SIGN_IDENTITY="" \
+              DEVELOPMENT_TEAM=""
+          fi
 
       - name: Upload iOS artifacts
         uses: actions/upload-artifact@v4
@@ -75,7 +98,7 @@ jobs:
           name: ios-app
           path: iosApp/build/Release-iphoneos/*.app
 
-  # Workflow block for building Desktop
+  # Desktop build job
   build-desktop:
     runs-on: ubuntu-latest
     steps:
@@ -105,7 +128,7 @@ jobs:
           name: desktop-jar
           path: composeApp/build/libs/*.jar
 
-  # Workflow block for building Web
+  # Web build job
   build-web:
     runs-on: ubuntu-latest
     steps:
@@ -135,7 +158,7 @@ jobs:
           github_token: ${{ secrets.GH_TOKEN }}
           publish_dir: composeApp/build/dist/wasmJs/productionExecutable
 
-  # Workflow block for generating artifact links
+  # Generate artifact links
   generate-artifact-links:
     runs-on: ubuntu-latest
     needs: [build-android, build-ios, build-desktop, build-web]
@@ -144,19 +167,14 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
         run: |
-          # Get the run ID
-          RUN_ID=$(echo "${{ github.run_id }}")
+          RUN_ID=${{ github.run_id }}
           REPO=${{ github.repository }}
-          
-          # Fetch the list of artifacts
           ARTIFACTS=$(curl -s -H "Authorization: token $GITHUB_TOKEN" "https://api.github.com/repos/$REPO/actions/runs/$RUN_ID/artifacts")
-          
-          # Extract URLs for each artifact
           echo "| Platform | Artifact | Link |" > artifacts.md
           echo "|----------|----------|------|" >> artifacts.md
-          for artifact in $(echo "$ARTIFACTS" | jq -r '.artifacts[] | "\(.name) \(.archive_download_url)"'); do
-            NAME=$(echo $artifact | cut -d ' ' -f1)
-            URL=$(echo $artifact | cut -d ' ' -f2)
+          echo "$ARTIFACTS" | jq -r '.artifacts[] | "\(.name) \(.archive_download_url)"' | while read -r line; do
+            NAME=$(echo "$line" | cut -d ' ' -f1)
+            URL=$(echo "$line" | cut -d ' ' -f2)
             echo "| $NAME | Artifact | [Download]($URL) |" >> artifacts.md
           done
           cp artifacts.md README.md
