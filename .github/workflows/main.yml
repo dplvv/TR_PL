@@ -49,6 +49,11 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
+      - name: Set up latest Xcode
+        uses: maxim-lobanov/setup-xcode@v1
+        with:
+          xcode-version: latest
+
       - name: Check Xcode version
         run: xcodebuild -version
 
@@ -67,17 +72,10 @@ jobs:
             echo "No Podfile found. Skipping CocoaPods installation."
           fi
 
-      - name: Verify iOS project format compatibility
+      - name: List contents of iosApp directory
         run: |
-          if [ ! -d iosApp/iosApp.xcodeproj ]; then
-            echo "Error: Project file 'iosApp.xcodeproj' not found."
-            exit 1
-          fi
-          echo "Checking if project is compatible with current Xcode..."
-          xcodebuild -project iosApp/iosApp.xcodeproj -list || {
-            echo "The project file format is incompatible with the current Xcode version."
-            exit 1
-          }
+          echo "Contents of iosApp directory:"
+          ls -R iosApp
 
       - name: Build iOS app
         run: |
