@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: io.ktor:ktor-sse-iossimulatorarm64:3.0.0-wasm2" type="kotlin.native" external-system-id="GRADLE">
+    <properties groupId="io.ktor" artifactId="ktor-sse-iossimulatorarm64" version="3.0.0-wasm2" />
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.ktor/ktor-sse-iossimulatorarm64/3.0.0-wasm2/bc0aa74756289e27e5b7b3e5013769d39dd31fba/ktor-sse.klib!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.ktor/ktor-sse-iossimulatorarm64/3.0.0-wasm2/e0ddb1f74ada3f97a5dd19940b23e7042c7db06d/ktor-sse-iossimulatorarm64-3.0.0-wasm2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

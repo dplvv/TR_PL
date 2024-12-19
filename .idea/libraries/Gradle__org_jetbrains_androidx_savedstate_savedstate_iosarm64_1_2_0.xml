@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: org.jetbrains.androidx.savedstate:savedstate-iosarm64:1.2.0" type="kotlin.native" external-system-id="GRADLE">
+    <properties groupId="org.jetbrains.androidx.savedstate" artifactId="savedstate-iosarm64" version="1.2.0" />
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.androidx.savedstate/savedstate-iosarm64/1.2.0/3495f211e182ca275084098009a5d7f9354ea46c/savedstate.klib!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.androidx.savedstate/savedstate-iosarm64/1.2.0/d23ceac73ab25929ba642484d63a6d6da0cefbd4/savedstate-iosarm64-1.2.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: cafe.adriel.voyager:voyager-navigator-desktop:1.1.0-beta02" type="java-imported" external-system-id="GRADLE">
+    <properties groupId="cafe.adriel.voyager" artifactId="voyager-navigator-desktop" version="1.1.0-beta02" />
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/cafe.adriel.voyager/voyager-navigator-desktop/1.1.0-beta02/38b0ceab7c85514ab82316d0c94ea2f1140a9763/voyager-navigator-desktop-1.1.0-beta02.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/cafe.adriel.voyager/voyager-navigator-desktop/1.1.0-beta02/f855c45965076b7590ffea5a9705fddec447b6a0/voyager-navigator-desktop-1.1.0-beta02-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: dev.chrisbanes.material3:material3-window-size-class-multiplatform-wasm-js:0.5.0" type="kotlin.wasm.js" external-system-id="GRADLE">
+    <properties groupId="dev.chrisbanes.material3" artifactId="material3-window-size-class-multiplatform-wasm-js" version="0.5.0" />
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/dev.chrisbanes.material3/material3-window-size-class-multiplatform-wasm-js/0.5.0/a759702bb54007cfd8fd4cc45954d48cad4a0bd2/lib-wasm-js.klib!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/dev.chrisbanes.material3/material3-window-size-class-multiplatform-wasm-js/0.5.0/6aa9ae8fe15507809b95697ebf1885c8870a3998/lib-wasm-js-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

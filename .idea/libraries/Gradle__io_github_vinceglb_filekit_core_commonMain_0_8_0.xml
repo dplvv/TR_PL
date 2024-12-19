@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: io.github.vinceglb:filekit-core:commonMain:0.8.0" type="kotlin.common" external-system-id="GRADLE">
+    <properties groupId="io.github.vinceglb" artifactId="filekit-core" version="0.8.0" />
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/.kotlin/metadata/kotlinTransformedMetadataLibraries/io.github.vinceglb-filekit-core-0.8.0-commonMain-P5Ft5Q.klib!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.github.vinceglb/filekit-core/0.8.0/a393f731a3ab79689d3828f61b0bc7a881f744b5/filekit-core-0.8.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: io.github.vinceglb:filekit-core-jvm:0.8.0" type="java-imported" external-system-id="GRADLE">
+    <properties groupId="io.github.vinceglb" artifactId="filekit-core-jvm" version="0.8.0" />
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.github.vinceglb/filekit-core-jvm/0.8.0/51ea24076e67ae2fa86693283edc1f48db52afe9/filekit-core-jvm.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.github.vinceglb/filekit-core-jvm/0.8.0/953987d1b034be063b36415858be963057f569bb/filekit-core-jvm-0.8.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

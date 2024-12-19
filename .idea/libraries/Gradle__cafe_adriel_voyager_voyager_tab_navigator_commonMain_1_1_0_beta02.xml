@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: cafe.adriel.voyager:voyager-tab-navigator:commonMain:1.1.0-beta02" type="kotlin.common" external-system-id="GRADLE">
+    <properties groupId="cafe.adriel.voyager" artifactId="voyager-tab-navigator" version="1.1.0-beta02" />
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/.kotlin/metadata/kotlinTransformedMetadataLibraries/cafe.adriel.voyager-voyager-tab-navigator-1.1.0-beta02-commonMain-lSMn8w.klib!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/cafe.adriel.voyager/voyager-tab-navigator/1.1.0-beta02/3d1e09cf3ff0f01a494f3416cab347e097157303/voyager-tab-navigator-kotlin-1.1.0-beta02-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: io.coil-kt.coil3:coil-compose-core-jvm:3.0.0-alpha06" type="java-imported" external-system-id="GRADLE">
+    <properties groupId="io.coil-kt.coil3" artifactId="coil-compose-core-jvm" version="3.0.0-alpha06" />
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.coil-kt.coil3/coil-compose-core-jvm/3.0.0-alpha06/69cea0f00d8f3919839268d616a109a74edaa765/coil-compose-core-jvm-3.0.0-alpha06.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.coil-kt.coil3/coil-compose-core-jvm/3.0.0-alpha06/ea3766f39a1393398fe4f24518805ca041d66aca/coil-compose-core-jvm-3.0.0-alpha06-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
