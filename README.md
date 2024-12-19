@@ -4,7 +4,6 @@ Travel App — это простое мобильное приложение, д
 
 📱 Предпросмотр
 ![765434567654](https://github.com/user-attachments/assets/0349ce19-41cd-427c-9b71-ef0d38ebbb7c)
-![Uploading 765434567654.png…]
 
 ▶️ Android, iOS и Desktop
 Смотреть видео-демонстрацию: https://disk.yandex.ru/i/xzAfDkOJ0bRJBA
