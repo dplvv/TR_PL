@@ -58,8 +58,10 @@ Travel App — это простое мобильное приложение, д
 		•	Для Android выберите конфигурацию androidApp.
 		•	Для iOS выберите конфигурацию iosApp или используйте Xcode.
   		•	ПК:
-    		<img width="868" alt="image" src="https://github.com/user-attachments/assets/1d00405a-ce3f-4b40-a9b9-5580671b355c" />
-		<img width="464" alt="image" src="https://github.com/user-attachments/assets/5e27c7c3-8c31-4001-9ed4-d8cb345e614c" />
+    		
+<img width="868" alt="image" src="https://github.com/user-attachments/assets/1d00405a-ce3f-4b40-a9b9-5580671b355c" />
+		
+<img width="464" alt="image" src="https://github.com/user-attachments/assets/5e27c7c3-8c31-4001-9ed4-d8cb345e614c" />
 
  
 🖥️ Поддерживаемые платформы
