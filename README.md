@@ -1,9 +1,10 @@
-![765434567654](https://github.com/user-attachments/assets/0349ce19-41cd-427c-9b71-ef0d38ebbb7c)Travel App (Kotlin Multiplatform Mobile)
+Travel App (Kotlin Multiplatform Mobile)
 
 Travel App — это простое мобильное приложение, демонстрирующее использование Kotlin Multiplatform Mobile для разработки приложений под Android и iOS с использованием Jetpack Compose 🚀.
 
 📱 Предпросмотр
-![Uploading 765434567654.png…]()
+![765434567654](https://github.com/user-attachments/assets/0349ce19-41cd-427c-9b71-ef0d38ebbb7c)
+![Uploading 765434567654.png…]
 
 ▶️ Android, iOS и Desktop
 Смотреть видео-демонстрацию: https://disk.yandex.ru/i/xzAfDkOJ0bRJBA
