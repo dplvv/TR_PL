@@ -2,8 +2,17 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/TravelBuddy.iml" filepath="$PROJECT_DIR$/.idea/modules/TravelBuddy.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/composeApp/TravelBuddy.composeApp.iml" filepath="$PROJECT_DIR$/.idea/modules/composeApp/TravelBuddy.composeApp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/composeApp/TravelBuddy.composeApp.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/composeApp/TravelBuddy.composeApp.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/composeApp/TravelBuddy.composeApp.commonMain.iml" filepath="$PROJECT_DIR$/.idea/modules/composeApp/TravelBuddy.composeApp.commonMain.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/composeApp/TravelBuddy.composeApp.desktopMain.iml" filepath="$PROJECT_DIR$/.idea/modules/composeApp/TravelBuddy.composeApp.desktopMain.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/composeApp/TravelBuddy.composeApp.iosArm64Main.iml" filepath="$PROJECT_DIR$/.idea/modules/composeApp/TravelBuddy.composeApp.iosArm64Main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/composeApp/TravelBuddy.composeApp.iosMain.iml" filepath="$PROJECT_DIR$/.idea/modules/composeApp/TravelBuddy.composeApp.iosMain.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/composeApp/TravelBuddy.composeApp.iosSimulatorArm64Main.iml" filepath="$PROJECT_DIR$/.idea/modules/composeApp/TravelBuddy.composeApp.iosSimulatorArm64Main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/composeApp/TravelBuddy.composeApp.iosX64Main.iml" filepath="$PROJECT_DIR$/.idea/modules/composeApp/TravelBuddy.composeApp.iosX64Main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/composeApp/TravelBuddy.composeApp.main.iml" filepath="$PROJECT_DIR$/.idea/modules/composeApp/TravelBuddy.composeApp.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/composeApp/TravelBuddy.composeApp.nativeMain.iml" filepath="$PROJECT_DIR$/.idea/modules/composeApp/TravelBuddy.composeApp.nativeMain.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/composeApp/TravelBuddy.composeApp.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/composeApp/TravelBuddy.composeApp.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/composeApp/TravelBuddy.composeApp.wasmJsMain.iml" filepath="$PROJECT_DIR$/.idea/modules/composeApp/TravelBuddy.composeApp.wasmJsMain.iml" />
     </modules>
   </component>
 </project>
