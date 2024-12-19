@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: dev.shreyaspatil.generativeai:generativeai-google-iossimulatorarm64:0.5.0-1.0.0-wasm" type="kotlin.native" external-system-id="GRADLE">
+    <properties groupId="dev.shreyaspatil.generativeai" artifactId="generativeai-google-iossimulatorarm64" version="0.5.0-1.0.0-wasm" />
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/dev.shreyaspatil.generativeai/generativeai-google-iossimulatorarm64/0.5.0-1.0.0-wasm/a03ac1ef2950476fe7d76395c1553977aa2b52de/generativeai.klib!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/dev.shreyaspatil.generativeai/generativeai-google-iossimulatorarm64/0.5.0-1.0.0-wasm/a5f5f4c0a6005a8587933f15b93cf90544b3fd76/generativeai-iossimulatorarm64-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

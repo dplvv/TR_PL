@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.mikepenz:multiplatform-markdown-renderer-iossimulatorarm64:0.16.0" type="kotlin.native" external-system-id="GRADLE">
+    <properties groupId="com.mikepenz" artifactId="multiplatform-markdown-renderer-iossimulatorarm64" version="0.16.0" />
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.mikepenz/multiplatform-markdown-renderer-iossimulatorarm64/0.16.0/ba694ab9f96e80a17f720267fd7d1405ddd6fa6e/multiplatform-markdown-renderer.klib!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.mikepenz/multiplatform-markdown-renderer-iossimulatorarm64/0.16.0/af2e662466b697efe7be063a934f907dc26fd66b/multiplatform-markdown-renderer-iossimulatorarm64-0.16.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

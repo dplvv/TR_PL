@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: cafe.adriel.voyager:voyager-screenmodel-wasm-js:1.1.0-beta02" type="kotlin.wasm.js" external-system-id="GRADLE">
+    <properties groupId="cafe.adriel.voyager" artifactId="voyager-screenmodel-wasm-js" version="1.1.0-beta02" />
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/cafe.adriel.voyager/voyager-screenmodel-wasm-js/1.1.0-beta02/1a3a9d81c4301d6144b4b02df7d5ac1cc7003060/voyager-screenmodel-wasm-js-1.1.0-beta02.klib!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/cafe.adriel.voyager/voyager-screenmodel-wasm-js/1.1.0-beta02/d58b9274a889945215b3b00d8e87c9bb7d0289ed/voyager-screenmodel-wasm-js-1.1.0-beta02-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

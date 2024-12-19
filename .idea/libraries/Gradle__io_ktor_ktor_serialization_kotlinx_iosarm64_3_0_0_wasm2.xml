@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: io.ktor:ktor-serialization-kotlinx-iosarm64:3.0.0-wasm2" type="kotlin.native" external-system-id="GRADLE">
+    <properties groupId="io.ktor" artifactId="ktor-serialization-kotlinx-iosarm64" version="3.0.0-wasm2" />
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.ktor/ktor-serialization-kotlinx-iosarm64/3.0.0-wasm2/10b2758682d6587fc65a4fd10354075a189d7a07/ktor-serialization-kotlinx.klib!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.ktor/ktor-serialization-kotlinx-iosarm64/3.0.0-wasm2/26c96835aa73d458635f130c517bd62f0391861e/ktor-serialization-kotlinx-iosarm64-3.0.0-wasm2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

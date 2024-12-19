@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: com.mikepenz:multiplatform-markdown-renderer-m3-android:0.16.0@aar" external-system-id="GRADLE">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-4/41d8690eaa549def9486c69abb9f75d3/transformed/multiplatform-markdown-renderer-m3-release/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-4/41d8690eaa549def9486c69abb9f75d3/transformed/multiplatform-markdown-renderer-m3-release/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.mikepenz/multiplatform-markdown-renderer-m3-android/0.16.0/e1879d4b235e048472d78d5cc74d90a26c15b402/multiplatform-markdown-renderer-m3-android-0.16.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.mikepenz/multiplatform-markdown-renderer-m3-android/0.16.0/9efc4fd5c423e8a871ad5bc3306bc5f4296fdda8/multiplatform-markdown-renderer-m3-android-0.16.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

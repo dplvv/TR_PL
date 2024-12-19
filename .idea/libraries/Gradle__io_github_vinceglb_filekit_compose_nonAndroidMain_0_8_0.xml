@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: io.github.vinceglb:filekit-compose:nonAndroidMain:0.8.0" type="kotlin.common" external-system-id="GRADLE">
+    <properties groupId="io.github.vinceglb" artifactId="filekit-compose" version="0.8.0" />
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/.kotlin/metadata/kotlinTransformedMetadataLibraries/io.github.vinceglb-filekit-compose-0.8.0-nonAndroidMain-Ch_AhQ.klib!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.github.vinceglb/filekit-compose/0.8.0/4a5140a521de7171b2735e27a32e23818d6eb89a/filekit-compose-kotlin-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

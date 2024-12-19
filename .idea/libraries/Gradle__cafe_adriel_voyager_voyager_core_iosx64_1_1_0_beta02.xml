@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: cafe.adriel.voyager:voyager-core-iosx64:1.1.0-beta02" type="kotlin.native" external-system-id="GRADLE">
+    <properties groupId="cafe.adriel.voyager" artifactId="voyager-core-iosx64" version="1.1.0-beta02" />
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/cafe.adriel.voyager/voyager-core-iosx64/1.1.0-beta02/a292899f7509f781805ddff2b9f861ce5af34f9f/voyager-core.klib!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/cafe.adriel.voyager/voyager-core-iosx64/1.1.0-beta02/aef27d41573d2ce62ad00a33bdce077ab79f8788/voyager-core-iosx64-1.1.0-beta02-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
