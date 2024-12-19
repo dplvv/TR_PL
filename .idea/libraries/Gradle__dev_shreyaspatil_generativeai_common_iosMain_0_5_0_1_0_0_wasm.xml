@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: dev.shreyaspatil.generativeai:common:iosMain:0.5.0-1.0.0-wasm" type="kotlin.native" external-system-id="GRADLE">
+    <properties groupId="dev.shreyaspatil.generativeai" artifactId="common" version="0.5.0-1.0.0-wasm" />
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/.kotlin/metadata/kotlinTransformedMetadataLibraries/dev.shreyaspatil.generativeai-common-0.5.0-1.0.0-wasm-iosMain-iIQ7Nw.klib!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/dev.shreyaspatil.generativeai/common/0.5.0-1.0.0-wasm/68980dfa30440e0c0f2608599b0f810724cf5c00/common-0.5.0-1.0.0-wasm-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

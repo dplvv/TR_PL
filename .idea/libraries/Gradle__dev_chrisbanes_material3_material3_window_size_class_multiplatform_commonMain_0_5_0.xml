@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: dev.chrisbanes.material3:material3-window-size-class-multiplatform:commonMain:0.5.0" type="kotlin.common" external-system-id="GRADLE">
+    <properties groupId="dev.chrisbanes.material3" artifactId="material3-window-size-class-multiplatform" version="0.5.0" />
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/.kotlin/metadata/kotlinTransformedMetadataLibraries/dev.chrisbanes.material3-material3-window-size-class-multiplatform-0.5.0-commonMain-Re_r_Q.klib!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/dev.chrisbanes.material3/material3-window-size-class-multiplatform/0.5.0/25a5fd85e9c308d9488018e733a127c05e5eec70/lib-kotlin-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

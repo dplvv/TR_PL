@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: org.jetbrains.androidx.lifecycle:lifecycle-viewmodel-savedstate-iossimulatorarm64:2.8.0" type="kotlin.native" external-system-id="GRADLE">
+    <properties groupId="org.jetbrains.androidx.lifecycle" artifactId="lifecycle-viewmodel-savedstate-iossimulatorarm64" version="2.8.0" />
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.androidx.lifecycle/lifecycle-viewmodel-savedstate-iossimulatorarm64/2.8.0/428997cdcc6be5f1216133ac98f62b235f5ea555/lifecycle-viewmodel-savedstate.klib!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.androidx.lifecycle/lifecycle-viewmodel-savedstate-iossimulatorarm64/2.8.0/fab10fdf503b431e97fc1c761c43d3c7c140afe2/lifecycle-viewmodel-savedstate-iossimulatorarm64-2.8.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

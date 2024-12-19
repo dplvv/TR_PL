@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.mikepenz:multiplatform-markdown-renderer-jvm:0.16.0" type="java-imported" external-system-id="GRADLE">
+    <properties groupId="com.mikepenz" artifactId="multiplatform-markdown-renderer-jvm" version="0.16.0" />
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.mikepenz/multiplatform-markdown-renderer-jvm/0.16.0/2ea52121f55e095c05a73ee2bce8142987469e36/multiplatform-markdown-renderer-jvm-0.16.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.mikepenz/multiplatform-markdown-renderer-jvm/0.16.0/82f6bbb9d5cba9bdeae1fc151d715adf71e21e55/multiplatform-markdown-renderer-jvm-0.16.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

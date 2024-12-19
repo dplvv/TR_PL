@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: io.coil-kt.coil3:coil-network-core-iosarm64:3.0.0-alpha06" type="kotlin.native" external-system-id="GRADLE">
+    <properties groupId="io.coil-kt.coil3" artifactId="coil-network-core-iosarm64" version="3.0.0-alpha06" />
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.coil-kt.coil3/coil-network-core-iosarm64/3.0.0-alpha06/3e1132150db73e0c49df3999b1c5339659d026fc/coil-network-core.klib!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.coil-kt.coil3/coil-network-core-iosarm64/3.0.0-alpha06/62162a3cdb657cf1e7f5e2a1cf2c14fc34186e2e/coil-network-core-iosarm64-3.0.0-alpha06-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

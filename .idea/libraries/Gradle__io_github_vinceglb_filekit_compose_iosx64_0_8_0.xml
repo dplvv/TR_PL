@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: io.github.vinceglb:filekit-compose-iosx64:0.8.0" type="kotlin.native" external-system-id="GRADLE">
+    <properties groupId="io.github.vinceglb" artifactId="filekit-compose-iosx64" version="0.8.0" />
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.github.vinceglb/filekit-compose-iosx64/0.8.0/cc4445a637a7acc3a6ca281cfb37a053d3d044be/filekit-compose.klib!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.github.vinceglb/filekit-compose-iosx64/0.8.0/4a5140a521de7171b2735e27a32e23818d6eb89a/filekit-compose-iosx64-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

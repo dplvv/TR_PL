@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: dev.shreyaspatil.generativeai:common-iossimulatorarm64:0.5.0-1.0.0-wasm" type="kotlin.native" external-system-id="GRADLE">
+    <properties groupId="dev.shreyaspatil.generativeai" artifactId="common-iossimulatorarm64" version="0.5.0-1.0.0-wasm" />
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/dev.shreyaspatil.generativeai/common-iossimulatorarm64/0.5.0-1.0.0-wasm/2d1016fa33dddbae53e893f0480810c845316819/common.klib!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/dev.shreyaspatil.generativeai/common-iossimulatorarm64/0.5.0-1.0.0-wasm/df241ed281b981ef2917b56c2d23cb7cfb01e0fe/common-iossimulatorarm64-0.5.0-1.0.0-wasm-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

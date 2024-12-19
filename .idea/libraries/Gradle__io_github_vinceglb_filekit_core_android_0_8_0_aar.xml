@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: io.github.vinceglb:filekit-core-android:0.8.0@aar" external-system-id="GRADLE">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-4/535e044303d169302c099e3149552f4a/transformed/filekit-core-release/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-4/535e044303d169302c099e3149552f4a/transformed/filekit-core-release/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.github.vinceglb/filekit-core-android/0.8.0/e7686d0e769d0d292b07955567e0afbd3239d520/filekit-core-android-0.8.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.github.vinceglb/filekit-core-android/0.8.0/71fa602233ea58a3b48508b60802447eb1251410/filekit-core-android-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

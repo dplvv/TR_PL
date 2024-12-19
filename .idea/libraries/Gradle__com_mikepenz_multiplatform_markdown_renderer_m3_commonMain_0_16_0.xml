@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.mikepenz:multiplatform-markdown-renderer-m3:commonMain:0.16.0" type="kotlin.common" external-system-id="GRADLE">
+    <properties groupId="com.mikepenz" artifactId="multiplatform-markdown-renderer-m3" version="0.16.0" />
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/.kotlin/metadata/kotlinTransformedMetadataLibraries/com.mikepenz-multiplatform-markdown-renderer-m3-0.16.0-commonMain-E6ST4A.klib!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.mikepenz/multiplatform-markdown-renderer-m3/0.16.0/9efc4fd5c423e8a871ad5bc3306bc5f4296fdda8/multiplatform-markdown-renderer-m3-kotlin-0.16.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
