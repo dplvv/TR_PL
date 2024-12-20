@@ -72,11 +72,6 @@ jobs:
             echo "No Podfile found. Skipping CocoaPods installation."
           fi
 
-      - name: List contents of iosApp directory
-        run: |
-          echo "Contents of iosApp directory:"
-          ls -R iosApp
-
       - name: Build iOS app
         run: |
           if [ -d iosApp/iosApp.xcworkspace ]; then
