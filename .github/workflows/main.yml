@@ -51,54 +51,59 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
+      - name: Set up latest Xcode
+        uses: maxim-lobanov/setup-xcode@v1
+        with:
+          xcode-version: latest
+
+      - name: Check Xcode version
+        run: xcodebuild -version
+
       - name: Set up JDK
         uses: actions/setup-java@v4
         with:
           java-version: '17'
           distribution: 'zulu'
 
-      - name: Install Xcode Command Line Tools
+      - name: Install CocoaPods (if needed)
         run: |
-          if ! xcode-select --print-path > /dev/null 2>&1; then
-            echo "Xcode Command Line Tools are not installed. Installing..."
-            xcode-select --install || echo "Failed to install Xcode Command Line Tools"
+          if [ -f iosApp/Podfile ]; then
+            echo "Installing CocoaPods dependencies..."
+            pod install --project-directory=iosApp
           else
-            echo "Xcode Command Line Tools are already installed"
+            echo "No Podfile found. Skipping CocoaPods installation."
           fi
-      - name: Build iOS
+      - name: Build iOS app
         run: |
-          xcodebuild -allowProvisioningUpdates \
-            -workspace iosApp/iosApp.xcodeproj/project.xcworkspace \
-            -scheme iosApp \
-            -configuration Release \
-            -sdk iphoneos \
-            -destination 'generic/platform=iOS' \
-            build CODE_SIGNING_REQUIRED=NO \
-            CODE_SIGN_IDENTITY="" \
-            DEVELOPMENT_TEAM=""
-      - name: List Xcode build products
-        run: |
-          echo "Listing contents of the DerivedData directory:"
-          ls -R ~/Library/Developer/Xcode/DerivedData
-      - name: Find the latest .app file
-        id: find-app
-        run: |
-          # Find all .app directories and sort them by modification time
-          LATEST_APP=$(find ~/Library/Developer/Xcode/DerivedData -name "*.app" -type d -print0 | xargs -0 stat -f "%m %N" | sort -nr | head -n 1 | cut -d ' ' -f 2-)
-          if [ -z "$LATEST_APP" ]; then
-            echo "Error: No .app file found!"
-            exit 1
+          if [ -d iosApp/iosApp.xcworkspace ]; then
+            echo "Building with .xcworkspace..."
+            xcodebuild -allowProvisioningUpdates \
+              -workspace iosApp/iosApp.xcworkspace \
+              -scheme iosApp \
+              -configuration Release \
+              -sdk iphoneos \
+              -destination 'generic/platform=iOS' \
+              build CODE_SIGNING_REQUIRED=NO \
+              CODE_SIGN_IDENTITY="" \
+              DEVELOPMENT_TEAM=""
+          else
+            echo "Building with .xcodeproj..."
+            xcodebuild -allowProvisioningUpdates \
+              -project iosApp/iosApp.xcodeproj \
+              -scheme iosApp \
+              -configuration Release \
+              -sdk iphoneos \
+              -destination 'generic/platform=iOS' \
+              build CODE_SIGNING_REQUIRED=NO \
+              CODE_SIGN_IDENTITY="" \
+              DEVELOPMENT_TEAM=""
           fi
-          echo "Found latest .app file at $LATEST_APP"
-          echo "LATEST_APP=$LATEST_APP" >> $GITHUB_ENV
-      - name: Archive iOS app
-        run: |
-          cp -R "$LATEST_APP" .
-      - name: Upload iOS app
+      - name: Upload iOS build artifacts
         uses: actions/upload-artifact@v4
         with:
-          name: ios-app
-          path: "*.app"
+          name: ios-build-artifacts
+          path: |
+            iosApp/build/Release-iphoneos/*.app
 
   # Workflow block for building Desktop
   build-desktop:
