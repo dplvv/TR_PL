@@ -46,11 +46,16 @@ jobs:
 
   # Workflow block for building iOS
   build-ios:
-    runs-on: macos-14
+    runs-on: macos-latest
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
-
+        
+      - name: Set up latest Xcode
+        uses: maxim-lobanov/setup-xcode@v1
+        with:
+          xcode-version: latest
+          
       - name: Set up JDK
         uses: actions/setup-java@v4
         with:
