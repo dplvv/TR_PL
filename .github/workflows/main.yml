@@ -29,7 +29,6 @@ jobs:
           key: ${{ runner.os }}-gradle-${{ hashFiles('**/*.gradle*') }}
           restore-keys: |
             ${{ runner.os }}-gradle-
-
       - name: Build Android
         run: ./gradlew assembleRelease --info
 
@@ -47,11 +46,16 @@ jobs:
 
   # Workflow block for building iOS
   build-ios:
-    runs-on: macos-14
+    runs-on: macos-latest
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
-
+        
+      - name: Set up latest Xcode
+        uses: maxim-lobanov/setup-xcode@v1
+        with:
+          xcode-version: latest
+          
       - name: Set up JDK
         uses: actions/setup-java@v4
         with:
@@ -66,24 +70,36 @@ jobs:
           else
             echo "Xcode Command Line Tools are already installed"
           fi
-
-      - name: Build iOS
+          
+      - name: Build iOS app
         run: |
-          xcodebuild -allowProvisioningUpdates \
-            -workspace iosApp/iosApp.xcodeproj/project.xcworkspace \
-            -scheme iosApp \
-            -configuration Release \
-            -sdk iphoneos \
-            -destination 'generic/platform=iOS' \
-            build CODE_SIGNING_REQUIRED=NO \
-            CODE_SIGN_IDENTITY="" \
-            DEVELOPMENT_TEAM=""
-
+          if [ -d iosApp/iosApp.xcworkspace ]; then
+            echo "Building with .xcworkspace..."
+            xcodebuild -allowProvisioningUpdates \
+              -workspace iosApp/iosApp.xcworkspace \
+              -scheme iosApp \
+              -configuration Release \
+              -sdk iphoneos \
+              -destination 'generic/platform=iOS' \
+              build CODE_SIGNING_REQUIRED=NO \
+              CODE_SIGN_IDENTITY="" \
+              DEVELOPMENT_TEAM=""
+          else
+            echo "Building with .xcodeproj..."
+            xcodebuild -allowProvisioningUpdates \
+              -project iosApp/iosApp.xcodeproj \
+              -scheme iosApp \
+              -configuration Release \
+              -sdk iphoneos \
+              -destination 'generic/platform=iOS' \
+              build CODE_SIGNING_REQUIRED=NO \
+              CODE_SIGN_IDENTITY="" \
+              DEVELOPMENT_TEAM=""
+          fi
       - name: List Xcode build products
         run: |
           echo "Listing contents of the DerivedData directory:"
           ls -R ~/Library/Developer/Xcode/DerivedData
-
       - name: Find the latest .app file
         id: find-app
         run: |
@@ -95,11 +111,9 @@ jobs:
           fi
           echo "Found latest .app file at $LATEST_APP"
           echo "LATEST_APP=$LATEST_APP" >> $GITHUB_ENV
-
       - name: Archive iOS app
         run: |
           cp -R "$LATEST_APP" .
-
       - name: Upload iOS app
         uses: actions/upload-artifact@v4
         with:
@@ -126,7 +140,6 @@ jobs:
           key: ${{ runner.os }}-gradle-${{ hashFiles('**/*.gradle*') }}
           restore-keys: |
             ${{ runner.os }}-gradle-
-
       - name: Build Desktop
         run: ./gradlew desktopJar
 
@@ -138,28 +151,32 @@ jobs:
 
   # Workflow block for building macOS
   build-macos:
-    runs-on: macos-14
+    runs-on: macos-latest
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
-
+        
+      - name: Set up latest Xcode
+        uses: maxim-lobanov/setup-xcode@v1
+        with:
+          xcode-version: latest
+          
       - name: Install Dependencies
         run: brew install create-dmg
 
       - name: Build macOS app
         run: |
-          xcodebuild -allowProvisioningUpdates -workspace iosApp/iosApp.xcodeproj/project.xcworkspace -scheme iosApp -configuration Release -sdk iphoneos -destination name='iPhone 14' build CODE_SIGNING_REQUIRED=NO CODE_SIGN_IDENTITY="" DEVELOPMENT_TEAM=""
-
+          xcodebuild -allowProvisioningUpdates -workspace iosApp/iosApp.xcodeproj/project.xcworkspace -scheme iosApp -configuration Release -sdk iphoneos -destination name='iPhone 16' build CODE_SIGNING_REQUIRED=NO CODE_SIGN_IDENTITY="" DEVELOPMENT_TEAM=""
       - name: Create DMG
         run: |
           ./gradlew packageDmg
-
       - name: Upload DMG
         uses: actions/upload-artifact@v4
         with:
           name: macos-dmg
           path: composeApp/build/compose/binaries/main/dmg/*.dmg
-
+          
+  # Workflow block for building msi
   build-msi:
     runs-on: macos-14
     steps:
@@ -195,7 +212,6 @@ jobs:
           key: ${{ runner.os }}-gradle-${{ hashFiles('**/*.gradle*') }}
           restore-keys: |
             ${{ runner.os }}-gradle-
-
       - name: Build Web
         run: ./gradlew wasmJsBrowserDistribution
 
@@ -210,7 +226,6 @@ jobs:
           # Create a zip file of the productionExecutable directory
           mkdir -p artifacts
           zip -r artifacts/web-app.zip composeApp/build/dist/wasmJs/productionExecutable
-
       - name: Upload Web artifacts
         uses: actions/upload-artifact@v4
         with:
